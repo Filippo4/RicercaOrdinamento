@@ -1,0 +1,22 @@
+﻿<Window x:Class="RicercaOrdinamento.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RicercaOrdinamento"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Image Margin="1,0,0,-3" Source="sfondo2.jpg" Stretch="Fill"/>
+
+        <TextBox x:Name="txt_ragazzo" HorizontalAlignment="Left" Height="43" Margin="105,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" FontSize="18" Foreground="White" Background="Transparent"/>
+        <Button x:Name="btn_inserisci" Content="Inserisci" HorizontalAlignment="Left" Margin="442,90,0,0" VerticalAlignment="Top" Width="108" Height="43" FontSize="18" Click="txt_inserisci_Click" Foreground="Black" Background="#FFC75454"/>
+        <Label BorderThickness="1" x:Name="lbl_lista" Content="" HorizontalAlignment="Left" Margin="91,165,0,0" VerticalAlignment="Top" Width="263" Height="195" FontSize="18" BorderBrush="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}" Foreground="White"/>
+        <TextBox x:Name="txt_ricerca" HorizontalAlignment="Left" Height="36" Margin="442,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228" FontSize="18" Background="#00000000" Foreground="White"/>
+        <Button x:Name="btn_ricerca" Content="Ricerca" HorizontalAlignment="Left" Margin="687,268,0,0" VerticalAlignment="Top" Width="82" Height="36" FontSize="18" Click="btn_ricerca_Click" Background="#FFC75454"/>
+        <Button x:Name="btn_salva" Content="Salva" HorizontalAlignment="Left" Margin="442,150,0,0" VerticalAlignment="Top" Width="108" Height="41" FontSize="18" Click="btn_salva_Click" Background="#FFC75454"/>
+        <Label Content="Inserire nome e cognome dello studente" HorizontalAlignment="Left" Margin="33,18,0,0" VerticalAlignment="Top" Width="398" FontSize="18" Height="32" Foreground="Black" Background="#7FFFFFFF" FontFamily="Sitka Small" FontWeight="Bold"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="-42,275,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
